@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoeStore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="hero-image">
+      <nav class="container border-bottom py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-3 d-flex align-items-center">
+            <a class="navbar-brand fs-2 fw-bolder fst-italic logo" href="#">
+              shoeStore
+            </a>
+          </div>
+          <!-- Menú principal centrado -->
+          <div class="col-6">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active text-dark fw-bold" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./store.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Iconos usuario y carrito -->
+          <div class="col-3 d-flex justify-content-end align-items-center">
+            <ul class="nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-person-circle fs-4"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./store.html" title="Carrito">
+                  <i class="bi bi-bag fs-4"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Banner -->
+      <div class="container py-5 text-center" style="position: relative; z-index: 2;">
+        <h1 class="display-4 fw-bold mb-3 text-white text-shadow" style="text-shadow: 2px 2px 8px #222;">¡Descubre tu próximo par favorito!</h1>
+        <p class="lead mb-4 text-white" style="text-shadow: 1px 1px 6px #222;">Las mejores marcas, los mejores precios. Compra fácil, rápido y seguro.</p>
+        <a href="./store.html" class="btn btn-dark btn-lg px-4">Ver catálogo</a>
+      </div>
+    </header>
+
+    <main class="flex-grow-1">
+      <!-- Categorías -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Categorías populares</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1719937310055-1ccad63a4f52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvbWJyZSUyMGhhY2llbmRvJTIwZGVwb3J0ZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Hombre">
+              <div class="card-body">
+                <h5 class="card-title">Hombre</h5>
+                <a href="./store.html?gender=Hombre" class="btn btn-outline-primary btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1675910518330-1843b4d03de1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fG11amVyJTIwaGFjaWVuZG8lMjBkZXBvcnRlfGVufDB8fDB8fHww" class="card-img-top" alt="Mujer">
+              <div class="card-body">
+                <h5 class="card-title">Mujer</h5>
+                <a href="./store.html?gender=Mujer" class="btn btn-outline-primary btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1720716429099-64da6fc0fd5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvbWJyZSUyMGhhY2llbmRvJTIwZGVwb3J0ZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Niños">
+              <div class="card-body">
+                <h5 class="card-title">Niños</h5>
+                <a href="./store.html?gender=Niños" class="btn btn-outline-primary btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Productos destacados -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Destacados</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5pa2V8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Nike">
+              <div class="card-body">
+                <h5 class="card-title">Nike Air Max</h5>
+                <p class="card-text">Comodidad y estilo para tu día a día.</p>
+                <span class="fw-bold text-primary">$250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1620794341491-76be6eeb6946?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWRpZGFzfGVufDB8fDB8fHww" class="card-img-top" alt="Adidas">
+              <div class="card-body">
+                <h5 class="card-title">Adidas Superstar</h5>
+                <p class="card-text">Un clásico que nunca pasa de moda.</p>
+                <span class="fw-bold text-primary">$220.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVtYSUyMHphcGF0b3N8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Puma">
+              <div class="card-body">
+                <h5 class="card-title">Puma Runner</h5>
+                <p class="card-text">Perfectos para entrenar o salir a caminar.</p>
+                <span class="fw-bold text-primary">$180.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section class="bg-light py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <p class="card-text">"¡Excelente atención y productos de calidad! Mi pedido llegó rápido y en perfecto estado."</p>
+                  <div class="d-flex align-items-center mt-3">
+                    <i class="bi bi-person-circle fs-2 me-2"></i>
+                    <span>María G.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <p class="card-text">"La variedad de modelos es increíble. ¡Repetiré mi compra sin duda!"</p>
+                  <div class="d-flex align-items-center mt-3">
+                    <i class="bi bi-person-circle fs-2 me-2"></i>
+                    <span>Carlos P.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <p class="card-text">"Muy fácil de comprar y los precios son los mejores que he visto."</p>
+                  <div class="d-flex align-items-center mt-3">
+                    <i class="bi bi-person-circle fs-2 me-2"></i>
+                    <span>Laura S.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-store bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">&copy; 2025 ShoeStore. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedidos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/admin.css"/>
+</head>
+<body>
+  <header class="bg-primary text-white p-3 mb-4">
+    <div class="container">
+      <h1 class="mb-0">Pedidos Realizados</h1>
+      <nav class="mt-2">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="panel.html">Panel</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="products.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="users.html">Usuarios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="order-list" class="mb-5">
+      <h2>Lista de Pedidos</h2>
+      <div class="table-responsive">
+        <table class="table" id="orders-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Usuario</th>
+              <th>Fecha</th>
+              <th>Total</th>
+              <th>Estado</th>
+              <th>Productos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se llenan las órdenes -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-3 mt-5">
+    <p class="mb-0">© 2025 E-Commerce. Admin Panel.</p>
+  </footer>
+
+  <script src="../js/orders.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

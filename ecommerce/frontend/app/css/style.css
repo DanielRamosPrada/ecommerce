@@ -1,0 +1,78 @@
+/* --- HEADER --- */
+
+/* - NAV - */
+
+/* LOGO */
+
+.logo {
+  color: #000;
+}
+
+/* TEXT */
+
+.nav-text {
+  color: #000;
+}
+
+/* ICON  */
+.bi-person-circle,
+.bi-bag {
+  font-size: 1.5em !important;
+  color: #000;
+}
+
+/* HERO IMAGE */
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 700px; /* Ajusta la altura según lo necesites */
+  background-image: url("/assets/img/hero-image.jpg"); /* Aquí va la URL de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen */
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+.bi-person-circle, .bi-bag {
+    font-size: 1.5em !important;
+    color: #000;
+}
+
+.whitecolor {
+  font-size: 1.5em !important;
+  color: #fff;
+}
+
+/* Card Styles */
+.card-img-top {
+  height: 200px;         /* Ajusta la altura según prefieras */
+  object-fit: cover;     /* Recorta la imagen para que llene el espacio */
+  object-position: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Para mejorar contraste en el hero */
+.text-shadow {
+  text-shadow: 2px 2px 8px #222;
+}
